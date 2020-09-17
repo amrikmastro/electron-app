@@ -38,7 +38,9 @@
 										<th>Karten-Nr.</th>
 										<th>Name</th>
 										<th>Pres</th>
+									
 									</tr>
+									
 								</table>
 							</div>
 							<div class="inputs-field">
@@ -204,7 +206,7 @@
 								</div>
 							</div>
 							<div class="table-field">
-								<table>
+								<table class="field-data">
 									<tr>
 										<th>Nr.</th>
 										<th>Name</th>
@@ -343,5 +345,43 @@
 		</div>
 	</div>
 	<!-- END POPUP PRODUCT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script> -->
+	<script>
+		$(document).ready(function(){
+			$.getJSON("data.json",function(data){
+				// console.log(data['data']['findShopById']['name'])
+				// console.log(data['data']['findShopById']['code'])
+				// console.log(data['data']['findShopById']['street'])
+					var get_Data=''
+				 $.each(data,function(key,value){
+					 get_Data += '<tr>'
+						get_Data += '<td>'+value.findShopById.name+'</td>'
+						get_Data += '<td>'+value.findShopById.code+ '</td>'
+						get_Data += '<td>'+value.findShopById.street + '</td>'
+						get_Data += '</tr>';
+				 })
+				 $('.field-data').append(get_Data)
+			})
+		})
+	</script>
 </body>
 </html>
+<!-- 
+<script>
+
+	$.getJSON("assets/data.json", function (data) {
+		var items = [];
+		$.each(data, function (key, value) {
+			items.push("<tr>");
+
+			items.push("<td id=''" + key + "''>" + value.id + "</td>");
+			items.push("<td id=''" + key + "''>" + value.name + "</td>")
+			items.push("<td id=''" + key + "''>" + value.prices + "</td>")
+			items.push("</tr>")
+		});
+		$("<tbody/>", { html: items.join("") }).appendTo("table")
+	})
+
+</script> -->

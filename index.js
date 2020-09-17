@@ -49,13 +49,13 @@ const mainMenuTemplate = [
     label: 'file'
   },
   {
-    label: 'main',
+    label: 'popup',
     click () {
       createAddWindow()
     }
   },
   {
-    label: 'last',
+    label: 'info',
     click () {
       lastAddWindow()
     }
