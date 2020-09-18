@@ -1,0 +1,203 @@
+[
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4ee",
+        "code": "55",
+        "name": "mit Tomatensauce und Basilikum",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          5.8
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4ef",
+        "code": "56",
+        "name": "mit Fleischsauce",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          6
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4f0",
+        "code": "57",
+        "name": "mit Schinken, Pilzen und Sahnesauce",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          6.3
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4f1",
+        "code": "58",
+        "name": "mit Sahnesauce und Schinken",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          6
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4f2",
+        "code": "59",
+        "name": "mit Thunfisch und Tomaten",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          6.3
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4f3",
+        "code": "60",
+        "name": "mit Gorgonzolasauce",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          6.7
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4f4",
+        "code": "61",
+        "name": "mit  Schweizersauce, Sahnesauce, Paprika, Zwiebeln und Basilikum",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          6.3
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4f5",
+        "code": "62",
+        "name": "mit Broccoli, Gorgonzola und Sahnesauce",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          7.4
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4f6",
+        "code": "63",
+        "name": "mit Zucchini, Tomatensauce und Peperoni, scharf",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          6.8
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4f7",
+        "code": "64",
+        "name": "mit Knoblauch, Olivenöl und Peperoni",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          5.6
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4f8",
+        "code": "65",
+        "name": "mit Pesto (Basilikumsauce)",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          6
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4f9",
+        "code": "66",
+        "name": "Carbonara",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          6
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4fa",
+        "code": "67",
+        "name": "Quattro Formaggi",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          6.5
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4fb",
+        "code": "68",
+        "name": "Pasta Mista (3versch. Nudelsorten und 3 ver. Soßen)",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          7.5
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4fc",
+        "code": "69",
+        "name": "Meeresfrüchte",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          7
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4fd",
+        "code": "70",
+        "name": "Lachssoße",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          6.5
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4fe",
+        "code": "71",
+        "name": "Brasilianische Art",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          6.5
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b4ff",
+        "code": "72",
+        "name": "mit Tomatensauce, Schinken und Erbsen",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          6.8
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b500",
+        "code": "73",
+        "name": "Arrabiata",
+        "description": "mit Tomatensauce, Zwiebeln und Oliven, scharf",
+        "sort_order": 1,
+        "prices": [
+          6.8
+        ]
+      },
+      {
+        "_id": "5f5a3b5858b94f1f1ca6b501",
+        "code": "74",
+        "name": "mit Fleischsauce, Sahnesauce, Schinken und Pilzen",
+        "description": "",
+        "sort_order": 1,
+        "prices": [
+          6.8
+        ]
+      }
+    ]
+  

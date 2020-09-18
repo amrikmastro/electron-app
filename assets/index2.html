@@ -212,51 +212,7 @@
 										<th>Name</th>
 										<th>Pres</th>
 									</tr>
-									<tr>
-										<td>1</td>
-										<td>Donerstasche</td>
-										<td>3</td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td>Donerdurum</td>
-										<td>3,5</td>
-									</tr>
-									<tr>
-										<td>23</td>
-										<td>Pizza Kebap</td>
-										<td>7</td>
-									</tr>
-									<tr>
-										<td>24</td>
-										<td>Pizza City</td>
-										<td>6</td>
-									</tr>
-									<tr>
-										<td>25</td>
-										<td>Gemistchter Salat</td>
-										<td>4,5</td>
-									</tr>
-									<tr>
-										<td>25g</td>
-										<td>Gemistchter Salat</td>
-										<td>6,5</td>
-									</tr>
-									<tr>
-										<td>35</td>
-										<td>Coca Cola</td>
-										<td>1,3</td>
-									</tr>
-									<tr>
-										<td>37m</td>
-										<td>Coca Cola Zero</td>
-										<td>1,6</td>
-									</tr>
-									<tr>
-										<td>38</td>
-										<td>Mezzo Mix</td>
-										<td>1,3</td>
-									</tr>
+								
 								</table>
 							</div>
 						</div>
@@ -271,57 +227,13 @@
 								</div>
 							</div>
 							<div class="table-field">
-								<table>
+								<table class="below_table">
 									<tr>
 										<th>Nr.</th>
 										<th>Name</th>
 										<th>Pres</th>
 									</tr>
-									<tr>
-										<td></td>
-										<td>Auberginen</td>
-										<td>0.5</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Bolognese</td>
-										<td>0.5</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Broccoli</td>
-										<td>7</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Eler</td>
-										<td>0.5</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Hackfi</td>
-										<td>0,5</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Jalapenose</td>
-										<td>0,5</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Kapern</td>
-										<td>0,5</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Kase</td>
-										<td>0.5</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td>Mozarella</td>
-										<td>0.5</td>
-									</tr>
+									
 								</table>
 							</div>
 						</div>
@@ -346,42 +258,37 @@
 	</div>
 	<!-- END POPUP PRODUCT -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<!-- <script src="js/bootstrap.min.js"></script>
-	<script src="js/bootstrap.min.js"></script> -->
-	<script>
+     <script>
 		$(document).ready(function(){
 			$.getJSON("data.json",function(data){
-				// console.log(data['data']['findShopById']['name'])
-				// console.log(data['data']['findShopById']['code'])
-				// console.log(data['data']['findShopById']['street'])
-					var get_Data=''
+			      var get_data='';
 				 $.each(data,function(key,value){
-					 get_Data += '<tr>'
-						get_Data += '<td>'+value.findShopById.name+'</td>'
-						get_Data += '<td>'+value.findShopById.code+ '</td>'
-						get_Data += '<td>'+value.findShopById.street + '</td>'
-						get_Data += '</tr>';
+				 get_data += '<tr>'
+						get_data += '<td>'+value.code+'</td>'
+						get_data += '<td>'+value.name+ '</td>'
+						get_data += '<td>'+value.prices+'</td>'
+						get_data += '</tr>';
 				 })
-				 $('.field-data').append(get_Data)
-			})
-		})
-	</script>
-</body>
-</html>
-<!-- 
-<script>
+				 $('.field-data').append(get_data)
+					   })
+					})
+				</script>
+					      <script>
+							$(document).ready(function(){
+								$.getJSON("second.json",function(data){
+									console.log('hello')
+									  var table_data='';
+									 $.each(data,function(key,value){
+									 table_data += '<tr>'
+											table_data += '<td>'+value.code+'</td>'
+											table_data += '<td>'+value.name+ '</td>'
+											table_data += '<td>'+value.prices+'</td>'
+											table_data += '</tr>';
+									 })
+									 $('.below_table').append(table_data)
+										   })
+										})
+										 </script>
+		                   </body>
+                         </html>
 
-	$.getJSON("assets/data.json", function (data) {
-		var items = [];
-		$.each(data, function (key, value) {
-			items.push("<tr>");
-
-			items.push("<td id=''" + key + "''>" + value.id + "</td>");
-			items.push("<td id=''" + key + "''>" + value.name + "</td>")
-			items.push("<td id=''" + key + "''>" + value.prices + "</td>")
-			items.push("</tr>")
-		});
-		$("<tbody/>", { html: items.join("") }).appendTo("table")
-	})
-
-</script> -->
