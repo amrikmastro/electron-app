@@ -11,6 +11,7 @@
 	<script src="https://use.fontawesome.com/661e91f447.js"></script>
 
 	<link rel="stylesheet" href="css/style.css">
+
 </head>
 <body> 
 	<!-- POPUP PRODUCT -->
@@ -33,14 +34,14 @@
 						<div class="inputs-field__box mb-0">
 							<h3>Bestelung Loschen - f7</h3>
 							<div class="table-field">
-								<table>
+								<table class="main_table">
 									<tr>
 										<th>Karten-Nr.</th>
 										<th>Name</th>
 										<th>Pres</th>
 									
 									</tr>
-									
+								
 								</table>
 							</div>
 							<div class="inputs-field">
@@ -227,7 +228,7 @@
 								</div>
 							</div>
 							<div class="table-field">
-								<table class="below_table">
+								<table class="below_table" id="table_below">
 									<tr>
 										<th>Nr.</th>
 										<th>Name</th>
@@ -273,22 +274,55 @@
 					   })
 					})
 				</script>
-					      <script>
-							$(document).ready(function(){
-								$.getJSON("second.json",function(data){
-									console.log('hello')
-									  var table_data='';
-									 $.each(data,function(key,value){
-									 table_data += '<tr>'
-											table_data += '<td>'+value.code+'</td>'
-											table_data += '<td>'+value.name+ '</td>'
-											table_data += '<td>'+value.prices+'</td>'
-											table_data += '</tr>';
-									 })
-									 $('.below_table').append(table_data)
-										   })
-										})
-										 </script>
-		                   </body>
-                         </html>
+
+
+         <!-- SECOND TABLE -->
+
+				<script>
+				$(document).ready(function(){
+					$.getJSON("second.json",function(data){
+					
+						  var table_data='';
+						 $.each(data,function(key,value){
+							table_data += '<tr>'
+						table_data += '<td>'+value.code+'</td>'
+							table_data += '<td>'+value.name+ '</td>'
+						table_data += '<td>'+value.prices+'</td>'
+						table_data += '</tr>';
+							})
+							$('.below_table').append(table_data)
+								})
+							})
+						
+						</script>
+						<script>
+					
+					
+						$('#table_below').click(function () {
+						var table=document.getElementById("table_below")
+							console.log(table.rows.length)
+							for(var i = 1; i < table.rows.length; i++)
+                {
+                    table.rows[i].onclick = function()
+                    {
+						console.log(this.cells[0].innerHTML)
+						console.log(this.cells[1].innerHTML)
+						console.log(this.cells[2].innerHTML)
+						table_data=''
+						table_data += '<tr>'
+						table_data += '<td>'+this.cells[0].innerHTML+'</td>'
+							table_data += '<td>'+this.cells[1].innerHTML+ '</td>'
+						table_data += '<td>'+this.cells[2].innerHTML+'</td>'
+						table_data += '</tr>';
+						$('.main_table').append(table_data)
+
+                   
+                    };
+                }
+						})
+
+					</script>
+					
+		                      </body>
+                              </html>
 
