@@ -19,6 +19,7 @@
 		});
 	</script>
 
+
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body style="background: #ECF5FF">
@@ -60,7 +61,7 @@
 			<a class="btn-default btn-beenden" href="javascript:void(0);" title="title">
 				Beenden
 			</a>
-			<a class="btn-default btn-andelmen" href="javascript:void(0);" title="title">
+			<a class="btn-default btn-andelmen" id="login_button" href="javascript:void(0);" title="title" onclick=popup()>
 				Anmelden
 			</a>
 		</div>
@@ -68,4 +69,8 @@
 	<!-- END POPUP LOGIN -->
 </body>
 </html>
-
+<script  type = "text/javascript">
+	function popup(){
+		location.replace('http://127.0.0.1:5500/assets/index2.html')
+	}
+</script>
