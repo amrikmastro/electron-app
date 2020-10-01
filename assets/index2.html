@@ -1,328 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Popup product</title>
-	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Popup product</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+      rel="stylesheet"
+    />
 
-	<script src="https://use.fontawesome.com/661e91f447.js"></script>
+    <script src="https://use.fontawesome.com/661e91f447.js"></script>
 
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- POPUP PRODUCT -->
+    <div class="popup popup-product">
+      <div class="popup__head">
+        <div class="popup-head__img">
+          <img src="img/img-01.png" alt="image description" />
+        </div>
+        <div class="popup-head__title">
+          Pizza Pro - PIZZA V9.2.3 - Pizzeria Mulano ::
+        </div>
+        <div class="popup-head__close">
+          <a href="javascript:void(0);" title="title">+</a>
+        </div>
+      </div>
+      <div class="popup__body">
+        <form action="">
+          <div class="popup-body__wrap">
+            <div class="popup-body__left">
+              <div class="inputs-field__box mb-0">
+                <h3>Bestelung Loschen - f7</h3>
+                <div class="table-field">
+                  <table class="main_table">
+                    <tr>
+                      <th>Karten-Nr.</th>
+                      <th>Name</th>
+                      <th>Pres</th>
+                    </tr>
+                  </table>
+                </div>
+                <div class="inputs-field">
+                  <div class="inputs-field__col">
+                    <div class="inputs-field__box">
+                      <h3>Kundenininformation</h3>
+                      <div class="inputs-field__row">
+                        <div class="inputs-field__label">
+                          <label for="Anzahl">Anzahl der Bestellungen:</label>
+                        </div>
+                        <div class="inputs-field__input">
+                          <input id="Anzahl" type="text" />
+                        </div>
+                      </div>
+                      <div class="inputs-field__row">
+                        <div class="inputs-field__label">
+                          <label for="Summe">Durchschnittche Summe:</label>
+                        </div>
+                        <div class="inputs-field__input">
+                          <input id="Summe" type="text" />
+                        </div>
+                      </div>
+                      <div class="inputs-field__row">
+                        <div class="inputs-field__label">
+                          <label for="Gessantsumme">Gessantsumme:</label>
+                        </div>
+                        <div class="inputs-field__input">
+                          <input id="Gessantsumme" type="text" />
+                        </div>
+                      </div>
+                      <div class="inputs-field__row">
+                        <div class="inputs-field__label">
+                          <label for="Maximale">Maximale Summe:</label>
+                        </div>
+                        <div class="inputs-field__input">
+                          <input id="Maximale" type="text" />
+                        </div>
+                      </div>
+                      <div class="inputs-field__row">
+                        <div class="inputs-field__label">
+                          <label for="Minimale">Minimale Summe:</label>
+                        </div>
+                        <div class="inputs-field__input">
+                          <input id="Minimale" type="text" />
+                        </div>
+                      </div>
+                      <div class="inputs-field__row">
+                        <div class="inputs-field__label">
+                          <label for="Letzte">Letzte Bestelungsdatum:</label>
+                        </div>
+                        <div class="inputs-field__input">
+                          <input id="Letzte" type="text" />
+                        </div>
+                      </div>
+                      <div class="inputs-field__row">
+                        <div class="inputs-field__label">
+                          <label for="Kunde">Kunde seit:</label>
+                        </div>
+                        <div class="inputs-field__input">
+                          <input id="Kunde" type="text" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inputs-field__box">
+                      <h3>Top 10 Artikel</h3>
+                      <div class="table-field table-field_sm">
+                        <table>
+                          <tr>
+                            <th>Artikelname</th>
+                            <th>Ainzahl</th>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="inputs-field__col inputs-field__col_sm">
+                    <div class="inputs-field__box">
+                      <div class="inputs-field__row">
+                        <div class="inputs-field__label">
+                          <label for="Geichten">Geichten:</label>
+                        </div>
+                        <div class="inputs-field__input">
+                          <input id="Geichten" type="text" value="0,00" />
+                        </div>
+                        <span class="inputs-field__symbol"
+                          ><i class="fa fa-eur" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                      <div class="inputs-field__row">
+                        <div class="inputs-field__label">
+                          <label for="Zutaten">Zutaten:</label>
+                        </div>
+                        <div class="inputs-field__input">
+                          <input id="Zutaten" type="text" value="0,00" />
+                        </div>
+                        <span class="inputs-field__symbol"
+                          ><i class="fa fa-eur" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                      <div class="inputs-field__row">
+                        <div class="inputs-field__label">
+                          <label for="Anfahrit">Anfahrit: (F10)</label>
+                        </div>
+                        <div class="inputs-field__input">
+                          <input id="Anfahrit" type="text" value="1,00" />
+                        </div>
+                        <span class="inputs-field__symbol"
+                          ><i class="fa fa-eur" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                      <div class="inputs-field__row">
+                        <div class="inputs-field__label">
+                          <label for="MwSt">MwSt 7,0%</label>
+                        </div>
+                        <div class="inputs-field__input">
+                          <input id="MwSt" type="text" value="0,00" />
+                        </div>
+                        <span class="inputs-field__symbol"
+                          ><i class="fa fa-percent" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                      <div class="inputs-field__row">
+                        <div class="inputs-field__label">
+                          <label for="MwSt">MwSt 19,0%</label>
+                        </div>
+                        <div class="inputs-field__input">
+                          <input id="MwSt" type="text" value="19,00" />
+                        </div>
+                        <span class="inputs-field__symbol"
+                          ><i class="fa fa-percent" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                      <div class="inputs-field__row">
+                        <div class="inputs-field__label">
+                          <label for="Rebatt">Rebatt: (F11)</label>
+                        </div>
+                        <div class="inputs-field__input">
+                          <input id="Rebatt" type="text" value="0,00" />
+                        </div>
+                        <span class="inputs-field__symbol"
+                          ><i class="fa fa-eur" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                      <div class="inputs-field__row">
+                        <div class="inputs-field__label">
+                          <label for="Gesamtpreis"
+                            ><strong>Gesamtpreis:</strong></label
+                          >
+                        </div>
+                        <div class="inputs-field__input">
+                          <input id="Gesamtpreis" type="text" value="0,00" />
+                        </div>
+                        <span class="inputs-field__symbol"
+                          ><i class="fa fa-eur" aria-hidden="true"></i
+                        ></span>
+                      </div>
+                      <div class="inputs-field__btn">
+                        <a
+                          class="btn-default"
+                          href="javascript:void(0);"
+                          title="title"
+                        >
+                          F2 - Extas
+                        </a>
+                        <a
+                          class="btn-default"
+                          href="javascript:void(0);"
+                          title="title"
+                        >
+                          F9 - Menu
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popup-body__right popup-body__product">
+              <div class="inputs-field__box">
+                <h3>Produkt</h3>
+                <div class="inputs-field__row">
+                  <div class="inputs-field__label">
+                    <label for="Suchen" id="label_search">Suchen:</label>
+                  </div>
+                  <div class="inputs-field__input">
+                    <input id="Suchen" type="text" value="24" />
+                  </div>
+                </div>
+                <div class="table-field">
+                  <table class="field-data">
+                    <tr>
+                      <th>Nr.</th>
+                      <th>Name</th>
+                      <th>Pres</th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="inputs-field__box">
+                <h3>Zutaten</h3>
+                <div class="inputs-field__row">
+                  <div class="inputs-field__label">
+                    <label for="Suchen">Suchen:</label>
+                  </div>
+                  <div class="inputs-field__input">
+                    <input id="Suchen" type="text" />
+                  </div>
+                </div>
+                <div class="table-field">
+                  <table class="below_table" id="table_below">
+                    <tr>
+                      <th>Nr.</th>
+                      <th>Name</th>
+                      <th>Pres</th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="popup__btns popup__btns_product">
+        <a class="btn-default" href="javascript:void(0);" title="title">
+          <i class="fa fa-angle-double-left" aria-hidden="true"></i> Zuruck (F4)
+        </a>
+        <a
+          class="btn-default btn-bestellen"
+          href="javascript:void(0);"
+          title="title"
+        >
+          F3 - Bestellen ohne Quitung
+        </a>
+        <a
+          class="btn-default btn-anfahrt"
+          href="javascript:void(0);"
+          title="title"
+        >
+          F5 - Anfahrt kostenfrel
+        </a>
+        <a class="btn-default" href="javascript:void(0);" title="title">
+          F2 - Drucken
+          <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <!-- END POPUP PRODUCT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.getJSON('data.json', function (data) {
+          var get_data = ''
+          $.each(data, function (key, value) {
+            get_data += '<tr>'
+            get_data += '<td>' + value.code + '</td>'
+            get_data += '<td>' + value.name + '</td>'
+            get_data += '<td>' + value.prices + '</td>'
+            get_data += '</tr>'
+          })
+          $('.field-data').append(get_data)
+        })
+      })
+    </script>
 
-</head>
-<body> 
-	<!-- POPUP PRODUCT -->
-	<div class="popup popup-product">
-		<div class="popup__head">
-			<div class="popup-head__img">
-				<img src="img/img-01.png" alt="image description">
-			</div>
-			<div class="popup-head__title">
-				Pizza Pro - PIZZA V9.2.3 - Pizzeria Mulano ::
-			</div>
-			<div class="popup-head__close">
-				<a href="javascript:void(0);" title="title">+</a>
-			</div>
-		</div>
-		<div class="popup__body">
-			<form action="">
-				<div class="popup-body__wrap">
-					<div class="popup-body__left">
-						<div class="inputs-field__box mb-0">
-							<h3>Bestelung Loschen - f7</h3>
-							<div class="table-field">
-								<table class="main_table">
-									<tr>
-										<th>Karten-Nr.</th>
-										<th>Name</th>
-										<th>Pres</th>
-									
-									</tr>
-								
-								</table>
-							</div>
-							<div class="inputs-field">
-								<div class="inputs-field__col">
-									<div class="inputs-field__box">
-										<h3>Kundenininformation</h3>
-										<div class="inputs-field__row">
-											<div class="inputs-field__label">
-												<label for="Anzahl">Anzahl der Bestellungen:</label>
-											</div>
-											<div class="inputs-field__input">
-												<input id="Anzahl" type="text">
-											</div>
-										</div>
-										<div class="inputs-field__row">
-											<div class="inputs-field__label">
-												<label for="Summe">Durchschnittche Summe:</label>
-											</div>
-											<div class="inputs-field__input">
-												<input id="Summe" type="text">
-											</div>
-										</div>
-										<div class="inputs-field__row">
-											<div class="inputs-field__label">
-												<label for="Gessantsumme">Gessantsumme:</label>
-											</div>
-											<div class="inputs-field__input">
-												<input id="Gessantsumme" type="text">
-											</div>
-										</div>
-										<div class="inputs-field__row">
-											<div class="inputs-field__label">
-												<label for="Maximale">Maximale Summe:</label>
-											</div>
-											<div class="inputs-field__input">
-												<input id="Maximale" type="text">
-											</div>
-										</div>
-										<div class="inputs-field__row">
-											<div class="inputs-field__label">
-												<label for="Minimale">Minimale Summe:</label>
-											</div>
-											<div class="inputs-field__input">
-												<input id="Minimale" type="text">
-											</div>
-										</div>
-										<div class="inputs-field__row">
-											<div class="inputs-field__label">
-												<label for="Letzte">Letzte Bestelungsdatum:</label>
-											</div>
-											<div class="inputs-field__input">
-												<input id="Letzte" type="text">
-											</div>
-										</div>
-										<div class="inputs-field__row">
-											<div class="inputs-field__label">
-												<label for="Kunde">Kunde seit:</label>
-											</div>
-											<div class="inputs-field__input">
-												<input id="Kunde" type="text">
-											</div>
-										</div>
-									</div>
-									<div class="inputs-field__box">
-										<h3>Top 10 Artikel</h3>
-										<div class="table-field table-field_sm">
-											<table>
-												<tr>
-													<th>Artikelname</th>
-													<th>Ainzahl</th>
-												</tr>
-											</table>
-										</div>
-									</div>
-								</div>
-								<div class="inputs-field__col inputs-field__col_sm">
-									<div class="inputs-field__box">
-										<div class="inputs-field__row">
-											<div class="inputs-field__label">
-												<label for="Geichten">Geichten:</label>
-											</div>
-											<div class="inputs-field__input">
-												<input id="Geichten" type="text" value="0,00">
-											</div>
-											<span class="inputs-field__symbol"><i class="fa fa-eur" aria-hidden="true"></i></span>
-										</div>
-										<div class="inputs-field__row">
-											<div class="inputs-field__label">
-												<label for="Zutaten">Zutaten:</label>
-											</div>
-											<div class="inputs-field__input">
-												<input id="Zutaten" type="text" value="0,00">
-											</div>
-											<span class="inputs-field__symbol"><i class="fa fa-eur" aria-hidden="true"></i></span>
-										</div>
-										<div class="inputs-field__row">
-											<div class="inputs-field__label">
-												<label for="Anfahrit">Anfahrit: (F10)</label>
-											</div>
-											<div class="inputs-field__input">
-												<input id="Anfahrit" type="text" value="1,00">
-											</div>
-											<span class="inputs-field__symbol"><i class="fa fa-eur" aria-hidden="true"></i></span>
-										</div>
-										<div class="inputs-field__row">
-											<div class="inputs-field__label">
-												<label for="MwSt">MwSt 7,0%</label>
-											</div>
-											<div class="inputs-field__input">
-												<input id="MwSt" type="text" value="0,00">
-											</div>
-											<span class="inputs-field__symbol"><i class="fa fa-percent" aria-hidden="true"></i></span>
-										</div>
-										<div class="inputs-field__row">
-											<div class="inputs-field__label">
-												<label for="MwSt">MwSt 19,0%</label>
-											</div>
-											<div class="inputs-field__input">
-												<input id="MwSt" type="text" value="19,00">
-											</div>
-											<span class="inputs-field__symbol"><i class="fa fa-percent" aria-hidden="true"></i></span>
-										</div>
-										<div class="inputs-field__row">
-											<div class="inputs-field__label">
-												<label for="Rebatt">Rebatt: (F11)</label>
-											</div>
-											<div class="inputs-field__input">
-												<input id="Rebatt" type="text" value="0,00">
-											</div>
-											<span class="inputs-field__symbol"><i class="fa fa-eur" aria-hidden="true"></i></span>
-										</div>
-										<div class="inputs-field__row">
-											<div class="inputs-field__label">
-												<label for="Gesamtpreis"><strong>Gesamtpreis:</strong></label>
-											</div>
-											<div class="inputs-field__input">
-												<input id="Gesamtpreis" type="text" value="0,00">
-											</div>
-											<span class="inputs-field__symbol"><i class="fa fa-eur" aria-hidden="true"></i></span>
-										</div>
-										<div class="inputs-field__btn">
-											<a class="btn-default" href="javascript:void(0);" title="title">
-												F2 - Extas
-											</a>
-											<a class="btn-default" href="javascript:void(0);" title="title">
-												F9 - Menu
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="popup-body__right popup-body__product">
-						<div class="inputs-field__box">
-							<h3>Produkt</h3>
-							<div class="inputs-field__row">
-								<div class="inputs-field__label">
-									<label for="Suchen">Suchen:</label>
-								</div>
-								<div class="inputs-field__input">
-									<input id="Suchen" type="text" value="24">
-								</div>
-							</div>
-							<div class="table-field">
-								<table class="field-data">
-									<tr>
-										<th>Nr.</th>
-										<th>Name</th>
-										<th>Pres</th>
-									</tr>
-								
-								</table>
-							</div>
-						</div>
-						<div class="inputs-field__box">
-							<h3>Zutaten</h3>
-							<div class="inputs-field__row">
-								<div class="inputs-field__label">
-									<label for="Suchen">Suchen:</label>
-								</div>
-								<div class="inputs-field__input">
-									<input id="Suchen" type="text" value="24">
-								</div>
-							</div>
-							<div class="table-field">
-								<table class="below_table" id="table_below">
-									<tr>
-										<th>Nr.</th>
-										<th>Name</th>
-										<th>Pres</th>
-									</tr>
-									
-								</table>
-							</div>
-						</div>
-					</div>
-				</div>
-			</form>
-		</div>
-		<div class="popup__btns popup__btns_product">
-			<a class="btn-default" href="javascript:void(0);" title="title">
-				<i class="fa fa-angle-double-left" aria-hidden="true"></i> Zuruck (F4)
-			</a>
-			<a class="btn-default btn-bestellen" href="javascript:void(0);" title="title">
-				F3 - Bestellen ohne Quitung
-			</a>
-			<a class="btn-default btn-anfahrt" href="javascript:void(0);" title="title">
-				F5 - Anfahrt kostenfrel
-			</a>
-			<a class="btn-default" href="javascript:void(0);" title="title">
-				F2 - Drucken <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-			</a>
-		</div>
-	</div>
-	<!-- END POPUP PRODUCT -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-     <script>
-		$(document).ready(function(){
-			$.getJSON("data.json",function(data){
-			      var get_data='';
-				 $.each(data,function(key,value){
-				 get_data += '<tr>'
-						get_data += '<td>'+value.code+'</td>'
-						get_data += '<td>'+value.name+ '</td>'
-						get_data += '<td>'+value.prices+'</td>'
-						get_data += '</tr>';
-				 })
-				 $('.field-data').append(get_data)
-					   })
-					})
-				</script>
+    <!-- SECOND TABLE -->
 
+    <script>
+      $(document).ready(function () {
+        $.getJSON('second.json', function (data) {
+          var table_data = ''
+          $.each(data, function (key, value) {
+            table_data += '<tr>'
+            table_data += '<td>' + value.code + '</td>'
+            table_data += '<td>' + value.name + '</td>'
+            table_data += '<td>' + value.prices + '</td>'
+            table_data += '</tr>'
+          })
+          $('.below_table').append(table_data)
+        })
+      })
+    </script>
+    <script>
+      $('#table_below').click(function () {
+        var table = document.getElementById('table_below')
+        console.log(table.rows.length)
+        for (var i = 1; i < table.rows.length; i++) {
+          table.rows[i].onclick = function () {
+            console.log(this.cells[0].innerHTML)
+            console.log(this.cells[1].innerHTML)
+            console.log(this.cells[2].innerHTML)
+            table_data = ''
+            table_data += '<tr>'
+            table_data += '<td>' + this.cells[0].innerHTML + '</td>'
+            table_data += '<td>' + this.cells[1].innerHTML + '</td>'
+            table_data += '<td>' + this.cells[2].innerHTML + '</td>'
+            table_data += '</tr>'
+            $('.main_table').append(table_data)
+          }
+        }
+      })
+    </script>
+    <script>
+      $(document).ready(function () {
+        $('#Suchen').keyup(function () {
+          search_key = document.getElementById('Suchen').value
+          var tableRow = $('td')
+            .filter(function () {
+              return $(this).text() == search_key
+            })
+            .closest('tr')
+          tableRow.css('background-color', '#ecf5ff')
+          table_con=''
+            table_con += '<tr>'
+            table_con += '<td>' + tableRow[0].cells[0].innerHTML + '</td>'
+            table_con += '<td>' + tableRow[0].cells[1].innerHTML + '</td>'
+            table_con += '<td>' + tableRow[0].cells[2].innerHTML + '</td>'
+            table_con += '</tr>'
+          var input = document.getElementById("Suchen");
+          input.addEventListener("keyup", function(event) {
+          
+          });
+          if (event.keyCode === 13) {
+   
+            $('.main_table').append(table_con)
 
-         <!-- SECOND TABLE -->
-
-				<script>
-				$(document).ready(function(){
-					$.getJSON("second.json",function(data){
-					
-						  var table_data='';
-						 $.each(data,function(key,value){
-							table_data += '<tr>'
-						table_data += '<td>'+value.code+'</td>'
-							table_data += '<td>'+value.name+ '</td>'
-						table_data += '<td>'+value.prices+'</td>'
-						table_data += '</tr>';
-							})
-							$('.below_table').append(table_data)
-								})
-							})
-						
-						</script>
-						<script>
-					
-					
-						$('#table_below').click(function () {
-						var table=document.getElementById("table_below")
-							console.log(table.rows.length)
-							for(var i = 1; i < table.rows.length; i++)
-                {
-                    table.rows[i].onclick = function()
-                    {
-						console.log(this.cells[0].innerHTML)
-						console.log(this.cells[1].innerHTML)
-						console.log(this.cells[2].innerHTML)
-						table_data=''
-						table_data += '<tr>'
-						table_data += '<td>'+this.cells[0].innerHTML+'</td>'
-							table_data += '<td>'+this.cells[1].innerHTML+ '</td>'
-						table_data += '<td>'+this.cells[2].innerHTML+'</td>'
-						table_data += '</tr>';
-						$('.main_table').append(table_data)
-
-                   
-                    };
-                }
-						})
-
-					</script>
-					
-		                      </body>
-                              </html>
-
+ }
+          
+        })
+      })
+    </script>
+  </body>
+</html>
